@@ -2,15 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView, Linking, SafeAreaView, FlatList} from 'react-native';
 import { Button, Divider } from 'react-native-elements';
-import shalia from "./assets/Shalia.png";
-import vanessa from "./assets/vanessa-ramirez.png";
-import marcela from "./assets/marcela.png";
 import logo from "./assets/logo.png";
 import List from './List.js';
 import Desc from './Desc.js';
 import OppDesc from './OppDesc.js';
 
-export default function App() {
+export default function Marketing() {
 
   return (
       <ScrollView contentContainerStyle={{ flexGrow: 1}}>
@@ -20,7 +17,7 @@ export default function App() {
             Marketing is the creative department of Business Society! Marketing is responsible for the promotion and reputation of the Society. We are currently focusing on growing our social media through audience engagement and virtual promotion.
         </Text>
 
-        <Text style= {styles.header}> *Rotating Images Place Holder*</Text>
+        {/*<Text style= {styles.header}> *Rotating Images Place Holder*</Text>*/}
 
         <View style={styles.subBox}>
             <Text style= {styles.subheader}> Upcoming Events </Text>
@@ -52,8 +49,8 @@ export default function App() {
         </View>
 
         <OppDesc 
-          name='Sample Internship'
-          desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut quam neque. Vestibulum ac turpis ut diam finibus placerat id vitae leo. Vestibulum consectetur elit sit amet volutpat tincidunt. Vestibulum justo nunc, commodo eu gravida non, gravida et ligula. Mauris id arcu lacus. In justo dolor, mollis ornare dictum sed, aliquam ut nibh. Nulla facilisi. Nulla ut metus nec felis egestas congue ac vel nunc.'
+          name='Internship'
+          desc = 'Coming Soon Fall 2021'
           linkAv = {false}
           link = ''
         />
@@ -63,14 +60,14 @@ export default function App() {
             <Text style= {styles.subheader}> Resources </Text>
         </View>
         <OppDesc 
-          name='School Resources [Sample]'
-          desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut quam neque. Vestibulum ac turpis ut diam finibus placerat id vitae leo. Vestibulum consectetur elit sit amet volutpat tincidunt. Vestibulum justo nunc, commodo eu gravida non, gravida et ligula. Mauris id arcu lacus. In justo dolor, mollis ornare dictum sed, aliquam ut nibh. Nulla facilisi. Nulla ut metus nec felis egestas congue ac vel nunc.'
+          name='School Resources'
+          desc = 'Coming Soon Fall 2021'
           linkAv = {false}
           link = ''
         />
         <OppDesc 
           name='Buisness Society Peer Assistance'
-          desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut quam neque. Vestibulum ac turpis ut diam finibus placerat id vitae leo. Vestibulum consectetur elit sit amet volutpat tincidunt. Vestibulum justo nunc, commodo eu gravida non, gravida et ligula. Mauris id arcu lacus. In justo dolor, mollis ornare dictum sed, aliquam ut nibh. Nulla facilisi. Nulla ut metus nec felis egestas congue ac vel nunc.'
+          desc = 'Coming Soon Fall 2021'
           linkAv = {true}
           link = 'sample link'
         />
@@ -80,41 +77,38 @@ export default function App() {
             <Text style= {styles.subheader}> Department Members </Text>
         </View>
 
-        <Text style = {styles.memberNames}>Shalia Sharma</Text>
+        <Text style = {styles.memberNames}>Samantha</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:150, marginLeft: 138}}/>
+
+        {/*uncomment and place imported image in the 'source' attribute below*/}
+        {/*
         <Image source = {shalia} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
+        */}
+
         <View style={styles.memberDescipritons}>
             <Desc 
-              position='Chief Marketing Officer' 
-              major='Management and Business Economics' 
-              minor='Psychology' 
-              year = '4th year, Senior'
+              position='Chief Marketing Officer [Chair]' 
+              major='' 
+              minor='' 
+              year = ''
             />
             <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/shaila-sharma-3780221a5/')}/>
         </View>
-        <Text style = {styles.memberNames}>Vanessa Ramirez</Text>
+        <Text style = {styles.memberNames}>Lesley</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:175, marginLeft: 125}}/>
+        {/*uncomment and place imported image in the 'source' attribute below*/}
+        {/*
         <Image source = {vanessa} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
+          */}
+
         <View style={styles.memberDescipritons}>
             <Desc 
-              position='Facebook Media Manager' 
-              major='Management and Business Economics' 
-              minor='Psychology' 
-              year = '4th year, Senior'
+              position='Marketing Department Chair' 
+              major='' 
+              minor='' 
+              year = ''
             />
             <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> alert("LinkedIn Unavaliable")}>LinkedIn</Button>
-        </View>
-        <Text style = {styles.memberNames}>Marcela Mendez</Text>
-        <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:175, marginLeft: 125}}/>
-        <Image source = {marcela} resizeMethod='resize' style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
-        <View style={styles.memberDescipritons}>
-            <Desc 
-              position='LinkedIn Media Manager' 
-              major='Management and Business Economics' 
-              minor='Spanish' 
-              year = '4th year, Senior'
-            />
-            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/marcela-mendez-212499144')}>LinkedIn</Button>
         </View>
         <Text style={{textAlign:'center', color:'#b0aea9', paddingBottom:5, paddingTop:5}}>Business Society @ UCM</Text>
         <StatusBar style="auto" />
