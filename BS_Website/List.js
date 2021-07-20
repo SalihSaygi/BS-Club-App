@@ -7,7 +7,7 @@ class List extends Component {
         events: [
            {
               id: 0,
-              name: 'Sample - Mixer',
+              name: 'Mixer',
               date: '09/13/21',
               desc: 'Place holder event description',
            },
