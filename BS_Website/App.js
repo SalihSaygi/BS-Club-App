@@ -6,6 +6,8 @@ import logo from "./assets/logo.png";
 import List from './List.js';
 import Desc from './Desc.js';
 import OppDesc from './OppDesc.js';
+import Sam from './assets/sam_am.jpeg';
+
 
 export default function Marketing() {
 
@@ -77,22 +79,20 @@ export default function Marketing() {
             <Text style= {styles.subheader}> Department Members </Text>
         </View>
 
-        <Text style = {styles.memberNames}>Samantha</Text>
+        <Text style = {styles.memberNames}>Samantha Ammari</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:150, marginLeft: 138}}/>
 
         {/*uncomment and place imported image in the 'source' attribute below*/}
-        {/*
-        <Image source = {shalia} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
-        */}
+        <Image source = {Sam} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
 
         <View style={styles.memberDescipritons}>
             <Desc 
-              position='Chief Marketing Officer [Chair]' 
-              major='' 
-              minor='' 
-              year = ''
+              position='Chief Marketing Officer' 
+              major='Management and Business Economics' 
+              year = '2nd Year, Sophomore'
+              hasMinor = {false}
             />
-            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/shaila-sharma-3780221a5/')}/>
+            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/samantha-ammari/')}/>
         </View>
         <Text style = {styles.memberNames}>Lesley</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:175, marginLeft: 125}}/>

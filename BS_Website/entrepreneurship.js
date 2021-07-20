@@ -6,6 +6,9 @@ import logo from "./assets/logo.png";
 import List from './List.js';
 import Desc from './Desc.js';
 import OppDesc from './OppDesc.js';
+import Miguel from './assets/Miguel_Arana.jpg';
+import Alejandra from './assets/Alejandra_Cazarez.jpg';
+import Elijah from 'assets/elijah-mardigiandesjardins.png';
 
 export default function Entrepreneurship() {
 
@@ -77,39 +80,50 @@ export default function Entrepreneurship() {
             <Text style= {styles.subheader}> Department Members </Text>
         </View>
 
-        <Text style = {styles.memberNames}>Samantha</Text>
+        <Text style = {styles.memberNames}>Miguel Arana</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:150, marginLeft: 138}}/>
-
         {/*uncomment and place imported image in the 'source' attribute below*/}
-        {/*
-        <Image source = {shalia} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
-        */}
-
+        <Image source = {Miguel} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
         <View style={styles.memberDescipritons}>
             <Desc 
-              position='Chief Marketing Officer [Chair]' 
-              major='' 
-              minor='' 
-              year = ''
+              position='Chief Marketing Officer' 
+              major=' Management and Business Economics' 
+              minor='Psychology ' 
+              year = '4th Year, Senior'
             />
-            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/shaila-sharma-3780221a5/')}/>
+            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/miguel-arana/')}/>
         </View>
-        <Text style = {styles.memberNames}>Lesley</Text>
+
+        <Text style = {styles.memberNames}>Alejandra Cazarez</Text>
         <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:175, marginLeft: 125}}/>
         {/*uncomment and place imported image in the 'source' attribute below*/}
-        {/*
-        <Image source = {vanessa} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
-          */}
-
+        <Image source = {Alejandra} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
         <View style={styles.memberDescipritons}>
             <Desc 
-              position='Marketing Department Chair' 
-              major='' 
-              minor='' 
-              year = ''
+              position='Partnership Specialist' 
+              major='Management and Business Economics' 
+              minor='Political Science' 
+              year = '3rd Year, Junior'
             />
-            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> alert("LinkedIn Unavaliable")}>LinkedIn</Button>
+            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/alejandrcazarez/')}/>
         </View>
+
+        <Text style = {styles.memberNames}>Elijah Mardigian-Des-Jardins</Text>
+        <Divider style={{backgroundColor: 'black', height:1.5, marginBottom:10, maxWidth:175, marginLeft: 125}}/>
+        {/*uncomment and place imported image in the 'source' attribute below*/}
+        <Image source = {Elijah} style = {{width:305, height: 320, alignSelf: 'center', marginBottom:5, borderColor: 'black', borderWidth: 2}}/>
+        <View style={styles.memberDescipritons}>
+            <Desc 
+              position='?' 
+              major=' Management and Business Economics' 
+              minor='Political Science' 
+              year = '4th Year, Senior'
+            />
+            <Button title = "LinkedIn" style={{paddingTop: 5}} onPress={()=> Linking.openURL('https://www.linkedin.com/in/eli-mardigian-des-jardins-184166196')}/>
+        </View>
+
+
+
         <Text style={{textAlign:'center', color:'#b0aea9', paddingBottom:5, paddingTop:5}}>Business Society @ UCM</Text>
         <StatusBar style="auto" />
       </ScrollView>

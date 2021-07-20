@@ -11,18 +11,31 @@ class Desc extends Component {
             major: this.props.major,
             minor: this.props.minor,
             year: this.props.year,
+            hasMinor: this.props.hasMinor,
         }
     }
-
     render(){
-        return(
-        <View>
-            <Text style={styles.descText}><Bold>Position: </Bold>{this.props.position}</Text>
-            <Text style={styles.descText}><Bold>Major: </Bold>{this.props.major}</Text>
-            <Text style={styles.descText}><Bold>Minor: </Bold>{this.props.minor}</Text>
-            <Text style={styles.descText}><Bold>Year: </Bold>{this.props.year}</Text>
-        </View>
-        )
+        if(this.props.hasMinor == false){
+
+            return(                
+            <View>
+                <Text style={styles.descText}><Bold>Position: </Bold>{this.props.position}</Text>
+                <Text style={styles.descText}><Bold>Major: </Bold>{this.props.major}</Text>
+                <Text style={styles.descText}><Bold>Year: </Bold>{this.props.year}</Text>
+            </View>
+            )
+        }
+        else {
+            
+            return(                
+                <View>
+                    <Text style={styles.descText}><Bold>Position: </Bold>{this.props.position}</Text>
+                    <Text style={styles.descText}><Bold>Major: </Bold>{this.props.major}</Text>
+                    <Text style={styles.descText}><Bold>Minor: </Bold>{this.props.minor}</Text>
+                    <Text style={styles.descText}><Bold>Year: </Bold>{this.props.year}</Text>
+                </View>
+                )
+        }
 
     }
 }
