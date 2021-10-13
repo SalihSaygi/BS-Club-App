@@ -15,12 +15,13 @@ import logo from './assets/logo.png';
 import List from './List.js';
 import Desc from './Desc.js';
 // import OppDesc from './OppDesc.js'; //did not need it
-import Kinza from './assets/Kinza_Tauseef.jfif';
+import Kinza from './assets/Kinza_Tauseef.jpg';
 import Angie from './assets/Angei_Nechikat.jpg';
-import Valerie from './assets/Valerie_Okafor.jfif';
+import Valerie from './assets/Valerie_Okafor.jpg';
 import Melanie from './assets/Melanie_Baeza.jpeg';
+import Jianna from './assets/Jianna_San_Gabriel.jpg';
 
-export default function Marketing() {
+export default function Operation() {
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <Image
@@ -76,13 +77,13 @@ export default function Marketing() {
         <Text style={styles.subheader}> Opportunities </Text>
       </View>
 
-      <Text>COMING SOON!</Text>
+      <Text style={{ marginLeft: 10 }}>COMING SOON!</Text>
 
       <View style={styles.subBox}>
         <Text style={styles.subheader}> Resources </Text>
       </View>
 
-      <Text>COMING SOON!</Text>
+      <Text style={{ marginLeft: 10 }}>COMING SOON!</Text>
 
       <View style={styles.subBox}>
         <Text style={styles.subheader}> Department Members </Text>
@@ -101,7 +102,7 @@ export default function Marketing() {
 
       {/*uncomment and place imported image in the 'source' attribute below*/}
       <Image
-        source={Sam}
+        source={Jianna}
         style={{
           width: 305,
           height: 320,
