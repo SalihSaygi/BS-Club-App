@@ -15,7 +15,6 @@ import logo from './assets/logo.png';
 import List from './List.js';
 import Desc from './Desc.js';
 // import OppDesc from './OppDesc.js'; //did not need it
-import Sam from './assets/sam_am.jpeg';
 import Kinza from './assets/Kinza_Tauseef.jfif';
 import Angie from './assets/Angei_Nechikat.jpg';
 import Valerie from './assets/Valerie_Okafor.jfif';
